@@ -96,3 +96,37 @@ let x = 3;
 console.log(!(3 == 3));
 
 // Instanceof and Bitwise
+
+// ***********************************************************************************
+
+// Coding Question
+// 1. Calculate the area of rectangle (l * b)
+// 2. Take a variable minutes and convert it into seconds. minutes * 60
+// 3. Calculate the simple interest using formula (p * r * t)/100
+// 4. Take a variable "celsius" and convert that into fahrenheit...
+
+// 1.
+// let length = 50;
+// let width = 10;
+
+// console.log(length * width);
+
+// 2.
+// let minutes = 60;
+
+// console.log(minutes * 60);
+
+// 3.
+// let p = 10000;
+// let r = 10;
+// let t = 2;
+
+// let interest = (p * r * t) / 100;
+// console.log(interest);
+
+// instanceof  - object instance class
+// function Animal() {}
+// let dog = new Animal();
+// console.log(dog instanceof Animal);
+// console.log(dog instanceof Object);
+
