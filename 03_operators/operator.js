@@ -130,3 +130,33 @@ console.log(!(3 == 3));
 // console.log(dog instanceof Animal);
 // console.log(dog instanceof Object);
 
+// variable, data type, operator
+
+// Decision Making, Loops
+// ****************************************************************
+// pass by value - primitive(stack memory)
+// pass by reference - non - primitive (heap memory)
+
+let a = 10;
+
+// copy of itself to B
+let b = a;
+b = 20;
+
+console.log(b);
+console.log(a);
+
+// Non PRimitve
+
+let student = {
+  name: "Prem",
+  age: 25,
+};
+
+// original = reference
+let student1 = student;
+
+student1.name = "Purendhar";
+
+console.log(student1);
+console.log(student);
