@@ -155,5 +155,5 @@ if (username === "admin" && password === 12345) {
 // Based 0-23 print :
 // 5 to 11 AM : "Good Morning"
 // 12 to 16 PM : "Good Afternoon"
-// 4 to 9 PM : "Good Evening"
-// 9 to 9 AM : "Good Night"
+// 17 to  21 PM : "Good Evening"
+// 21 to 9 AM : "Good Night"
