@@ -78,13 +78,32 @@ console.log(total);
 
 // ./////////////////////////////////////////////////
 
+let employee = {
+  name: "Something",
+  age: 30,
+  role: "developer",
+};
+
+console.log(employee.role);
+
 let users = [
   { name: "John", isActive: true },
   { name: "Maven", isActive: false },
   { name: "Beast", isActive: true },
 ];
 
+for (let user of users) {
+  if (user.isActive) {
+    console.log(`${user.name} is online`);
+  }
+}
+
 // write a program to print the users who are active
 
-// Write a program to take input from the user, validate it 
+// Write a program to take password from the user, validate it
 
+// let password;
+
+// do {
+//   password = prompt("enter you password");
+// } while (password !== "1234");
