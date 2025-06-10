@@ -81,11 +81,14 @@
 // }
 // console.log(me);
 
-console.log(6 < 7 < 8);
+// console.log(6 < 7 < 8);
 
-console.log(0 == false);
-console.log(1 === true);
+// console.log(0 == false);
+// console.log(1 === true);
 
 // console.log([] === []);
 
 // pass by value and pass by reference
+
+
+console.log(Math.abs(-4))
