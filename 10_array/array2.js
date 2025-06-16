@@ -27,10 +27,17 @@
 // 1.
 let users = ["Sneha", "Rahul", "Purendhar"];
 
+// users.forEach(user => console.log(`Welcome ${user}`))
+
+// console.log(users.map((user) => "Welcome " + user));
+
 //Output : Welcome Sneha, Welcome Rahul
 
 // 2. INR to USD
-let priceInINR = [100, 200, 400, 118];
+// let priceInINR = [100, 200, 400, 118];
+
+// let priceInUSD = priceInINR.map((price) => (price / 86).toFixed(2));
+// priceInUSD.forEach((dollar) => console.log(Number(dollar));
 
 // 3.
 let users1 = [
@@ -41,6 +48,9 @@ let users1 = [
   { name: "Prem", age: 18 },
 ];
 
+// const above24 = users1.filter((user) => user.age > 24);
+// console.log(above24);
+
 // Output : users who are above 24
 
 // 4.
@@ -50,4 +60,8 @@ let cart = [
   { product: "charger", price: 1300 },
 ];
 
-//69000+55000+1300
+let totalCartValue = cart.reduce(
+  (sum, productValue) => sum + productValue.price,
+  0
+);
+console.log(totalCartValue);
