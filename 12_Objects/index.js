@@ -92,14 +92,51 @@
 // let d = { ...a, ...b, ...c , d : 1};
 // console.log(d);
 
-let course = {
-  courseInstructor: "Sharath",
-  fee: 999,
-  time: "11:30 AM",
-};
+// let arr = [1, 2, 2];
+// let arr1 = [4, 5, 6];
+
+// let second = [ ...arr, ...arr1 ];
+// console.log(second);
+
+// let course = {
+//   courseInstructor: "Sharath",
+//   fee: 999,
+//   time: "11:30 AM",
+//   city: {
+//     name: "hyderabad",
+//     pin: 500072,
+//   },
+// };
+
+// var name = "prem";
+// var pin = 4494949;
+
+// console.log(name);
+// console.log(pin);
+
+// let {
+//   city: { name, pin },
+// } = course;
+
+// console.log(name);
+// console.log(pin);
 
 //extract
-let { courseInstructor: instructor, fee, time } = course;
-console.log(instructor);
-console.log(fee);
-console.log(time);
+// let { courseInstructor: instructor, fee, time } = course;
+// console.log(instructor);
+// console.log(fee);
+// console.log(time);
+
+// Async Code  :Callback , Promise , ASync Await,
+
+// try, catch, finally
+
+// output based questions;;;
+
+// const key = "score";
+// const result = {
+//   score: 95,
+//   grade: "B",
+// };
+
+// console.log(result[key]);
