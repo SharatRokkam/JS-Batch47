@@ -17,7 +17,7 @@ ul.forEach(function (li) {
 });
 
 // HTML Collection - getElementsByClassName
-// convert to arrray using Array.from()
+// convert to array using Array.from()
 //then you can apply all the array methods ...
 
 const para = document.getElementsByClassName("para");
@@ -26,3 +26,6 @@ const convertedArr = Array.from(para);
 para.forEach(function (p) {
   p.style.color = "white";
 });
+
+
+// CRUD operation
