@@ -31,22 +31,30 @@
 //   console.log("you are scrolling");
 // });
 
-const decrement = document.querySelector("#decrement");
-const increment = document.querySelector("#increment");
-const para = document.querySelector("p");
+// const decrement = document.querySelector("#decrement");
+// const increment = document.querySelector("#increment");
+// const para = document.querySelector("p");
 
-let count = 10;
+// let count = 10;
 
-increment.addEventListener("click", () => {
-  if (count >= 10 && count < 20) {
-    count++;
-    para.textContent = count;
-  }
-});
+// increment.addEventListener("click", () => {
+//   if (count >= 10 && count < 20) {
+//     count++;
+//     para.textContent = count;
+//   }
+// });
 
-decrement.addEventListener("click", () => {
-  if (count < 20 && count > 10) {
-    count--;
-    para.textContent = count;
-  }
-});
+// decrement.addEventListener("click", () => {
+//   if (count < 20 && count > 10) {
+//     count--;
+//     para.textContent = count;
+//   }
+// });
+
+setTimeout(() => {
+  console.log("hi");
+}, 1000);
+
+setInterval(() => {
+  console.log("it will keep repeating");
+}, 2000);
