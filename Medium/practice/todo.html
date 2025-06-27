@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Todo List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #todoInput {
+            width: 70%;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        #addBtn {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        #addBtn:hover {
+            background-color: #45a049;
+        }
+
+        ol {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            background: #f0f0f0;
+            padding: 12px 18px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background: #e0e0e0;
+        }
+
+        button.delete-btn {
+            background-color: #ff4d4f;
+            border: none;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button.delete-btn:hover {
+            background-color: #d9363e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Todo List</h2>
+        <input type="text" id="todoInput" placeholder="Enter your todo" />
+        <button id="addBtn">Add Todo</button>
+        <ol id="todoList"></ol>
+    </div>
+
+    <script>
+        const input = document.querySelector("#todoInput")
+        const addBtn = document.querySelector("#addBtn")
+        const todoList = document.querySelector('#todoList')
+
+        addBtn.addEventListener("click", () => {
+            const task = input.value.trim()
+            if (task === "") return;
+
+            const li = document.createElement("li")
+            li.textContent = task;
+
+            const deleteBtn = document.createElement("button")
+            deleteBtn.textContent = "X"
+            deleteBtn.className = "delete-btn"
+
+            deleteBtn.addEventListener("click", () => {
+                todoList.removeChild(li)
+            })
+
+            li.appendChild(deleteBtn)
+            todoList.appendChild(li)
+            input.value = ""
+        })
+    </script>
+</body>
+
+</html>
